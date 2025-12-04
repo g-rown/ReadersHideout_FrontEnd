@@ -76,7 +76,7 @@ async function borrowBook(event) {
         }
 
         alert("Book borrowed successfully!");
-        window.location.href = "/borrowed/";
+        window.location.href = "borrowed.html";
     } catch (err) {
         console.error("Network error:", err);
         alert("Failed to borrow book. Please try again.");

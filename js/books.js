@@ -37,7 +37,7 @@ async function loadBooks() {
                     <td>${categoryName}</td>
                     <td>${book.available_copies} / ${book.total_copies}</td>
                     <td>
-                        <a href="/add-book/?id=${book.id}" class="btn btn-primary btn-sm" aria-label="Edit book" title="Edit book"><i class="bi bi-pencil-square"></i></a>
+                        <a href="add-book.html?id=${book.id}" class="btn btn-primary btn-sm" aria-label="Edit book" title="Edit book"><i class="bi bi-pencil-square"></i></a>
                         <button class="btn btn-danger btn-sm" onclick="deleteBook(${book.id})" aria-label="Delete book" title="Delete book"><i class="bi bi-x-lg"></i></button>
                     </td>
                 </tr>`;
@@ -91,7 +91,7 @@ async function saveBook(event) {
         const data = await res.json();
         if (!res.ok) throw new Error(data.detail || JSON.stringify(data));
         alert("Saved successfully!");
-        window.location.href = "/books/";
+        window.location.href = "books.html";
     } catch (err) {
         console.error(err);
         alert("Error saving book: " + err.message);
