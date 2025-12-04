@@ -16,23 +16,23 @@
     <nav class="navbar navbar-light bg-white p-3 mb-0">
         <div class="container">
             <div class="d-flex justify-content-center w-100">
-                <a href="/" class="navbar-brand m-0">Readers' Hideout</a>
+                <a href="/" class="navbar-brand m-0">Readers' Hideout</a> 
             </div>
         </div>
     </nav>
 
     <nav class="navbar navbar-light bg-white border-top border-bottom py-2 mb-0">
         <div class="container d-flex justify-content-center gap-5">
-            <a href="/books" class="nav-link">Manage Books</a>
-            <a href="/add-book" class="nav-link">Add New Book</a>
-            <a href="/borrowed" class="nav-link">Borrowed Books</a>
-            <a href="/borrow-book" class="nav-link">Borrow a Book</a>
+            <a href="books.html" class="nav-link">Manage Books</a>
+            <a href="add-book.html" class="nav-link">Add New Book</a>
+            <a href="borrowed.html" class="nav-link">Borrowed Books</a>
+            <a href="borrow-book.html" class="nav-link">Borrow a Book</a>
             <button id="logoutBtn" class="btn btn-secondary">Logout</button>
         </div>
     </nav>
 
     <div class="dashboard-header">
-        <img src="/images/library.png" alt="Dashboard Header" class="img-fluid w-100"> <!-- Adjust path for Vercel -->
+        <img src="/images/library.png" alt="Dashboard Header" class="img-fluid w-100">
     </div>
 
     <div class="container mt-5">
@@ -40,9 +40,8 @@
 
         <div class="row g-4">
 
-            <!-- Manage Books -->
             <div class="col-auto">
-                <a href="/books" class="text-decoration-none text-dark">
+                <a href="books.html" class="text-decoration-none text-dark">
                     <div class="card fixed-card d-flex flex-row align-items-center">
                         <i class="bi bi-book fs-1 me-4"></i>
                         <div>
@@ -53,9 +52,8 @@
                 </a>
             </div>
 
-            <!-- Add Book -->
             <div class="col-auto">
-                <a href="/add-book" class="text-decoration-none text-dark">
+                <a href="add-book.html" class="text-decoration-none text-dark">
                     <div class="card fixed-card d-flex flex-row align-items-center">
                         <i class="bi bi-journal-plus fs-1 me-3"></i>
                         <div>
@@ -66,9 +64,8 @@
                 </a>
             </div>
 
-            <!-- Borrowed Books -->
             <div class="col-auto">
-                <a href="/borrowed" class="text-decoration-none text-dark">
+                <a href="borrowed.html" class="text-decoration-none text-dark">
                     <div class="card fixed-card d-flex flex-row align-items-center">
                         <i class="bi bi-clipboard-check fs-1 me-3"></i>
                         <div>
@@ -79,9 +76,8 @@
                 </a>
             </div>
 
-            <!-- Borrow a Book -->
             <div class="col-auto">
-                <a href="/borrow-book" class="text-decoration-none text-dark">
+                <a href="borrow-book.html" class="text-decoration-none text-dark">
                     <div class="card fixed-card d-flex flex-row align-items-center">
                         <i class="bi bi-journal-arrow-down fs-1 me-3"></i>
                         <div>
@@ -99,7 +95,7 @@
         const logoutBtn = document.getElementById("logoutBtn");
         logoutBtn.addEventListener("click", () => {
             localStorage.removeItem("accessToken");
-            window.location.href = "/";
+            window.location.href = "/"; // Assuming Vercel serves the root as index.html
         });
     </script>
 </body>
