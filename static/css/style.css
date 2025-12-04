@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+.navbar {
+    border-bottom: lightgray 1px solid;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+/*index.html*/
+
+.card i {
+    margin-left: 10px;
+}
+
+.fixed-card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.fixed-card:hover {
+    transform: translateY(-3px);
+}
+
+
+.fixed-card i {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+
+.fixed-card:hover i {
+    color: #3275da; 
+}
+
+.add-button .search-button {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-buttons {
+    margin-top: 40px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.nav-link.active {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 6px 12px
+}
